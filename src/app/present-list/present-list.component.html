@@ -1,0 +1,5 @@
+<div class="card-parent">
+    <div *ngFor="let card of presents"> 
+        <app-card  [card]="card" *ngIf="card.visible"></app-card>
+    </div>
+</div>

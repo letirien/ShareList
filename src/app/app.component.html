@@ -1,10 +1,6 @@
 <app-header></app-header>
 <main>
-    <div class="card-parent">
-        <div *ngFor="let card of presents"> 
-            <app-card  [card]="card" *ngIf="card.visible"></app-card>
-        </div>
-    </div>
+    <app-present-list></app-present-list>
 </main>
 <app-sidebar></app-sidebar>
 <footer>

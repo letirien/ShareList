@@ -8,6 +8,7 @@ import { SidebarComponent } from './sidebar/sidebar.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { registerLocaleData } from '@angular/common';
 import * as fr from '@angular/common/locales/fr';
+import { PresentListComponent } from './present-list/present-list.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import * as fr from '@angular/common/locales/fr';
     CardComponent,
     HeaderComponent,
     SidebarComponent,
-    NavbarComponent
+    NavbarComponent,
+    PresentListComponent
   ],
   imports: [
     BrowserModule
