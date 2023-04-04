@@ -1,1 +1,5 @@
-<p>present works!</p>
+<div class="card-parent">
+    <p>Voici ce que je veux :)</p>
+    <p>{{present.msg}}</p>
+    <app-card  [present]="present" *ngIf="present.visible"></app-card>
+</div>

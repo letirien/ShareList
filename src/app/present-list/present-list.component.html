@@ -1,5 +1,5 @@
 <div class="card-parent">
     <div *ngFor="let present of presents"> 
-        <app-card  [present]="present" *ngIf="present.visible"></app-card>
+        <app-card  [present]="present" *ngIf="present.visible" [fromGrid]="true"></app-card>
     </div>
 </div>

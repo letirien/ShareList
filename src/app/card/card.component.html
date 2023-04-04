@@ -14,5 +14,6 @@
             <button (click)="onUpdateReview('for')"><span [ngStyle]="{ color: 'rgb(0, ' + (present.review.for.count * present.review.for.count) + ', 0)' }">{{present.review.for.count }}</span><img src="../assets/healthcare.png"></button>
             <button (click)="onUpdateReview('against')"><span [ngStyle]="{ color: 'rgb(' + (present.review.for.count * present.review.for.count) + ', 0, 0)' }">{{present.review.against.count }}</span><img src="../assets/garbage.png"></button>
         </div>
+        <a [routerLink]="('present/'+ present.id).toString()" *ngIf="fromGrid">Voir en détail</a>
     </div>
 </div>

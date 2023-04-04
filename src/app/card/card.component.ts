@@ -11,6 +11,7 @@ import { PresentService } from '../services/presents.service';
 export class CardComponent  {
 
   @Input() present!: Card;
+  @Input() fromGrid!: Boolean
 
   constructor(private PresentService: PresentService){}
 
@@ -19,4 +20,5 @@ export class CardComponent  {
       this.PresentService.voteById(this.present.id, el)
     }
   } 
+  
 }

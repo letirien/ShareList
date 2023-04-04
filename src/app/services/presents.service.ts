@@ -6,7 +6,6 @@ import { Card } from '../models/card.model'
 })
 // Services diff de Component n'a pas de méthode OnInit
 export class PresentService{
-    
     presents:Card[] = [
         {
           id: 1, 
@@ -87,11 +86,20 @@ export class PresentService{
     getAllPresents(): Card[]{
       return this.presents
     }
+    getPresent(id: Number): Card{
+      const present = this.presents.find(el => el.id === id)
+      if(!present){
+        throw new Error("existe pas")
+      }else{
+        return present
+      }
+      
+    }
 
     voteById(presentId:Number,vote: 'for' | 'against'): void{
       const present = this.presents.find(el => el.id === presentId)
       const voteForNb =  present?.review[vote].count
-      console.log(voteForNb);
+  
       
       if(present){
         // when Api Implemented =>  Update Api

@@ -1,0 +1,40 @@
+div{
+    position: fixed;
+    right: 48px;
+    top: 48px;
+
+    button{
+        width: 48px;
+        height: 48px;
+        background: rgb(231, 219, 233);
+        border-radius: 999px
+    }
+
+    svg{
+        width: 50%;
+        height: 100%;
+    }
+    .nav{
+        position: fixed;
+        max-width: 280px;
+        top: 120px;
+        //height: fit-content;
+        background: rgba(0, 0, 255, .2);
+        border-radius: 3px;
+        max-height: 0px;
+        transition: 0.2s;
+
+        &.open{
+            max-height: 280px;
+            padding: 24px 16px;
+
+            >div,a{
+                display: block;
+            }
+        }
+
+        >div,a{
+            display: none;
+        }
+    }
+}
