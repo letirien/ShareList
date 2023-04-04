@@ -21,13 +21,16 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
     - Directives: Build-in directives ngClass/Style
 - Ugly style and had fun with Angular stylesheets scoped system and Structural Directives
 - Pipe : In my case I used datePipe
+- Implemented first Service and added logic to it
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 # NEXT OR CURRENTLY LEARING
 
-- Services (current)
+- Routing for SPA (current)
 - ngModel
+- Implement API
+- Implement User Auth System
 
 
 ## Development server

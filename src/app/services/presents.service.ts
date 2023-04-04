@@ -9,6 +9,9 @@ export class PresentService{
     
     presents:Card[] = [
         {
+          id: 1, 
+          userId: 1,
+          familyId:1,
           title: "Mon premier voeu",
           description: "Nintendo Switch (modèle OLED) avec station d’accueil et manettes Joy-Con blanches", 
           msg: "J'aimerai vraiment avoir cette console de jeu vidéal",
@@ -31,6 +34,9 @@ export class PresentService{
         
       },
       {
+        id: 2, 
+        userId: 1,
+        familyId:1,
         title: "Mon second voeu",
         description: "APK mini", 
         msg: "J'aimerai vraiment avoir ce petit clavier midi",
@@ -53,6 +59,9 @@ export class PresentService{
       
     },
     {
+      id: 3, 
+      userId: 1,
+      familyId:1,
       title: "Mon troisième voeu",
       description: "MacBook Pro 13 pouces - Gris sidéral", 
       msg: "J'aimerai vraiment avoir ça",
@@ -75,4 +84,24 @@ export class PresentService{
     
   },
     ]
+    getAllPresents(): Card[]{
+      return this.presents
+    }
+
+    voteById(presentId:Number,vote: 'for' | 'against'): void{
+      const present = this.presents.find(el => el.id === presentId)
+      const voteForNb =  present?.review[vote].count
+      console.log(voteForNb);
+      
+      if(present){
+        // when Api Implemented =>  Update Api
+        // TODO: Add logic and boolean for User table if already Voted block vote when Api Ok
+        if(vote){
+          present.review[vote].count ++
+          }
+      }else{
+        throw new Error("l'elément voté, n'éxiste pas ou plus'")
+      }
+      
+    }
 }

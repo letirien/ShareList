@@ -16,6 +16,6 @@ export class PresentListComponent implements OnInit {
 
   }
   ngOnInit(): void {
-    this.presents = this.presentService.presents
-}
+    this.presents = this.presentService.getAllPresents()
+  }
 }

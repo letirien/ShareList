@@ -2,6 +2,10 @@
 body{
     background: #a7a5a5;
 }
+main{
+    max-width: 1200px;
+    margin: 0 auto;
+}
 
 a, .small {
     font-family: 'Oxygen', sans-serif;
@@ -36,10 +40,13 @@ p{
 }
 
 .card-parent{
-    width: 1280px;
-    margin: 0 auto;
     display: grid;
     grid-gap: 24px;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: auto;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+
+    >div{
+    align-self: center;
+    justify-self: center;
+    }
+    
 }

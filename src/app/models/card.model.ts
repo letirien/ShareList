@@ -10,6 +10,9 @@ interface Review {
   }
 
 export class Card {
+    id!: Number
+    userId!: Number
+    familyId!:Number
     title!: String
     description!: String
     msg!: String

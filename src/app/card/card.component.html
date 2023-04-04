@@ -1,18 +1,18 @@
-<div class="card" [ngClass]="{'sup': card.review.for.count > card.review.against.count, 'neg' : card.review.for.count < card.review.against.count }">
+<div class="card" [ngClass]="{'sup': present.review.for.count > present.review.against.count, 'neg' : present.review.for.count < present.review.against.count }">
     <div class="card-header" >
-        <h2>{{ card.title }}</h2>
-        <a [href]="card.link" target="blank">{{card.description}}</a>
+        <h2>{{ present.title }}</h2>
+        <a [href]="present.link" target="blank">{{present.description}}</a>
     </div>
     <div class="img-container">
-        <img [src]="card.img" [alt]="card.description">
+        <img [src]="present.img" [alt]="present.description">
     </div>
 
     <div class="card-footer">
-        <p class="specific">{{card.price}} € </p>
-        <p>{{card.creator}} a publié ce voeu le : <p class="specific">{{card.createdDate | date: 'dd/MM/yyyy, à HH:mm '}}</p>
+        <p class="specific">{{present.price}} € </p>
+        <p>{{present.creator}} a publié ce voeu le : <p class="specific">{{present.createdDate | date: 'dd/MM/yyyy, à HH:mm '}}</p>
         <div class="buttons-container">
-            <button (click)="onUpdateReview('for')"><span [ngStyle]="{ color: 'rgb(0, ' + (card.review.for.count * card.review.for.count) + ', 0)' }">{{card.review.for.count }}</span><img src="../assets/healthcare.png"></button>
-            <button (click)="onUpdateReview('against')"><span [ngStyle]="{ color: 'rgb(' + (card.review.for.count * card.review.for.count) + ', 0, 0)' }">{{card.review.against.count }}</span><img src="../assets/garbage.png"></button>
+            <button (click)="onUpdateReview('for')"><span [ngStyle]="{ color: 'rgb(0, ' + (present.review.for.count * present.review.for.count) + ', 0)' }">{{present.review.for.count }}</span><img src="../assets/healthcare.png"></button>
+            <button (click)="onUpdateReview('against')"><span [ngStyle]="{ color: 'rgb(' + (present.review.for.count * present.review.for.count) + ', 0, 0)' }">{{present.review.against.count }}</span><img src="../assets/garbage.png"></button>
         </div>
     </div>
 </div>

@@ -1,5 +1,6 @@
 import { Component, Input } from '@angular/core';
 import { Card } from '../models/card.model';
+import { PresentService } from '../services/presents.service';
 
 @Component({
   selector: 'app-card',
@@ -9,15 +10,13 @@ import { Card } from '../models/card.model';
 
 export class CardComponent  {
 
-  @Input() card!: Card;
+  @Input() present!: Card;
 
-  onUpdateReview(el:String): void {
-    if(el === "for"){
-      console.log(this.card.review);
-      
-      this.card.review.for.count ++
-    }else{
-      this.card.review.against.count ++
-    } 
-  }
+  constructor(private PresentService: PresentService){}
+
+  onUpdateReview(el: 'for' | 'against'): void {
+    if(el){      
+      this.PresentService.voteById(this.present.id, el)
+    }
+  } 
 }
