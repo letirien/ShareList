@@ -29,6 +29,10 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 - Routing for SPA (current)
 - ngModel
+- Observables
+- Forms
+- HTTP REQUEST
+- modules : with lazy loading.
 - Implement API
 - Implement User Auth System
 
