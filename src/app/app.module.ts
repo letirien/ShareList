@@ -9,6 +9,10 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { registerLocaleData } from '@angular/common';
 import * as fr from '@angular/common/locales/fr';
 import { PresentListComponent } from './present-list/present-list.component';
+import { AppRoutingModule } from './app-routing.module';
+import { LandingComponent } from './landing/landing.component';
+import { AddWishComponent } from './add-wish/add-wish.component';
+import { PresentComponent } from './present/present.component';
 
 @NgModule({
   declarations: [
@@ -17,10 +21,14 @@ import { PresentListComponent } from './present-list/present-list.component';
     HeaderComponent,
     SidebarComponent,
     NavbarComponent,
-    PresentListComponent
+    PresentListComponent,
+    LandingComponent,
+    AddWishComponent,
+    PresentComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    AppRoutingModule
   ],
   providers: [
     {provide: LOCALE_ID, useValue: 'fr-FR'}
