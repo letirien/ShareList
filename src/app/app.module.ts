@@ -13,6 +13,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { LandingComponent } from './landing/landing.component';
 import { AddWishComponent } from './add-wish/add-wish.component';
 import { PresentComponent } from './present/present.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -24,11 +25,14 @@ import { PresentComponent } from './present/present.component';
     PresentListComponent,
     LandingComponent,
     AddWishComponent,
-    PresentComponent
+    PresentComponent,
+    
+    
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [
     {provide: LOCALE_ID, useValue: 'fr-FR'}

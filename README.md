@@ -22,16 +22,17 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 - Ugly style and had fun with Angular stylesheets scoped system and Structural Directives
 - Pipe : In my case I used datePipe
 - Implemented first Service and added logic to it
+- Routing for SPA (current)
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 # NEXT OR CURRENTLY LEARING
 
-- Routing for SPA (current)
 - ngModel
-- Observables
-- Forms
-- HTTP REQUEST
+- Observables (current) and Operators
+    VISIT:    https://www.learnrxjs.io/
+- Forms (current)
+- HTTP REQUEST (following :)
 - modules : with lazy loading.
 - Implement API
 - Implement User Auth System

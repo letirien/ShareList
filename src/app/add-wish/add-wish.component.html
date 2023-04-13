@@ -1,1 +1,36 @@
-<p>add-wish works!</p>
+<div class="card-parent">
+    <form #addForm="ngForm" class="card" (ngSubmit)="onSubmitForm(addForm)">
+        <div class="card-header" >
+            <div class="form-section">
+                <label for="title">Ajouter un Titre</label>
+                <input type="text" id="title" name="title" [(ngModel)]="title">
+            </div>
+            <div class="form-section">
+                <label for="description">Ajouter une description du produit</label>
+                <textarea type="textarea" id="description" name="description" maxlength="320" [(ngModel)]="description"></textarea>
+             </div>
+             <div class="form-section">
+                <label for="link">Ajouter le lien du produit</label>
+                <input type="text" id="link" name="link" [(ngModel)]="link">
+            </div>   
+            <div class="form-section">
+                <label for="price">Ajouter le prix du produit</label>
+                <input type="Number" id="price" name="price" [(ngModel)]="price">
+            </div>   
+        </div>
+        <div class="img-container">
+            <div class="form-section">
+                <label for="img">Ajouter le lien de l'image</label>
+                <input type="url" id="img" name="img" [(ngModel)]="img">
+            </div>
+        </div>
+        <div class="card-footer">
+            <div class="buttons-container">
+                <button type="submit">Créer mon voeux</button>
+                <button>preview</button>
+            </div>
+
+        </div>
+    </form>
+
+</div>
