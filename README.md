@@ -37,7 +37,8 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 - Implement API
 - Implement User Auth System
 
-
+expliction HTTP Servive 
+https://docs.google.com/document/d/1DfnoEYmTQPGKdWiPPQRiW94uKOV73yhRXQAe4P2K0h8/edit
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
