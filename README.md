@@ -23,19 +23,18 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 - Pipe : In my case I used datePipe
 - Implemented first Service and added logic to it
 - Routing for SPA (current)
+- ngModel
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 # NEXT OR CURRENTLY LEARING
 
-- ngModel
 - Observables (current) and Operators
     VISIT:    https://www.learnrxjs.io/
 - Forms (current)
 - HTTP REQUEST (following :)
 - modules : with lazy loading.
 - Implement API
-- Implement User Auth System
 
 expliction HTTP Servive 
 https://docs.google.com/document/d/1DfnoEYmTQPGKdWiPPQRiW94uKOV73yhRXQAe4P2K0h8/edit
